@@ -6,9 +6,9 @@ import (
 )
 
 func main() {
-	logrus.Println(Get())
+	logrus.Println(GetGreeting())
 
-	lo.ForEach(names, func(x string, _ int) {
+	lo.ForEach(GetNames(), func(x string, _ int) {
 		logrus.Println(x)
 	})
 }
